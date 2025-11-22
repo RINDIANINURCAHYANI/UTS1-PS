@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builds": [
+  "functions": [
     { "src": "app.py", "use": "@vercel/python" }
   ],
   "routes": [
