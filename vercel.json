@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "{.venv,venv,__pycache__,.uv-cache,.pytest_cache,node_modules,data,datasets,models}/**"
+    }
+  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/app.py" }
   ]
