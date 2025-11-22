@@ -1,7 +1,25 @@
-uploads/
-static/images/
-__pycache__/
-.ipynb_checkpoints/
-*.csv
-*.zip
-*.pkl.bak
+# Python venv / caches
+.venv
+venv
+__pycache__
+*.pyc
+.uv-cache
+.pytest_cache
+
+# Data / model besar
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.onnx
+data/
+datasets/
+models/
+
+# Node (kalau ada)
+node_modules/
+.pnpm-store/
+.next/
+dist/
+build/
