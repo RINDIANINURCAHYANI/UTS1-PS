@@ -1,0 +1,191 @@
+/* =========================
+   GLOBAL BACKGROUND
+========================= */
+body.bg-gradient {
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #0f172a;
+}
+
+/* =========================
+   GLASS CARD STYLE
+========================= */
+.glass-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.main-card{
+  width: min(950px, 96vw);
+  padding: 48px 50px;
+}
+
+/* =========================
+   TITLE SECTION
+========================= */
+.title-wrap .title-icon{
+  font-size: 44px;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
+}
+
+.main-title{
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #1456ff;
+  letter-spacing: .4px;
+  margin-bottom: 6px;
+}
+
+.subtitle{
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* =========================
+   UPLOAD BOX
+========================= */
+.upload-box{
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+}
+
+/* =========================
+   BUTTON GLOW
+========================= */
+.btn-glow{
+  background: linear-gradient(90deg, #4f8cff, #00d4ff);
+  border: none;
+  color: white;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 149, 255, 0.35);
+  transition: all .2s ease-in-out;
+}
+
+.btn-glow:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 149, 255, 0.5);
+}
+
+/* =========================
+   NOTE
+========================= */
+.note{
+  font-size: 14px;
+  color: #475569;
+  background: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+/* =========================
+   RESULT SECTION
+========================= */
+.section-title{
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.plot-img{
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   PREDICTION BOXES
+========================= */
+.prediction-box{
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25),
+              0 10px 20px rgba(0,0,0,0.12);
+  transition: transform .2s ease;
+}
+
+.prediction-box:hover{
+  transform: translateY(-3px);
+}
+
+.prediction-box .label{
+  font-size: 18px;
+  margin-bottom: 6px;
+  opacity: .95;
+}
+
+.prediction-box .value{
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.prediction-box .desc{
+  font-size: 13px;
+  font-weight: 500;
+  opacity: .9;
+  margin-top: 4px;
+}
+
+/* color themes */
+.prediction-box.low{
+  background: linear-gradient(135deg, #0f9b0f, #38ef7d);
+}
+.prediction-box.medium{
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #1e293b;
+}
+.prediction-box.high{
+  background: linear-gradient(135deg, #cb2d3e, #ef473a);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px){
+  .main-card{ padding: 28px; }
+  .prediction-box .value{ font-size: 32px; }
+}
+/* card upload biar lebar & center kayak screenshot */
+.upload-card{
+  border-radius: 22px;
+  width: min(950px, 96vw);
+}
+
+/* judul lebih gede dan biru */
+.title-big{
+  font-size: 34px;
+  font-weight: 800;
+  color: #1456ff;
+}
+
+/* card hasil */
+.result-card{
+  border-radius: 22px;
+}
+
+/* angka di kotak bawah lebih besar */
+.count-num{
+  font-size: 34px;
+  margin: 0;
+  font-weight: 800;
+}
+
+/* warna kotak sedang biar kuning soft */
+.prediction-box.medium{
+  background: #ffc107 !important;
+  color: #111827 !important;
+}
+

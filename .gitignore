@@ -1,0 +1,7 @@
+uploads/
+static/images/
+__pycache__/
+.ipynb_checkpoints/
+*.csv
+*.zip
+*.pkl.bak
